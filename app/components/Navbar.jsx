@@ -43,7 +43,7 @@ function Navbar() {
     <div className={styles.hero_section} id='hero'>
       <div className={styles.left}>
         <h4 className={styles.p1}>Shaping Ideas Into Reality</h4>
-        <h4 className={styles.h3}>"Building technologies and conducting research on high-impact social issues."</h4>
+        <h4 className={styles.h3}>Building technologies and conducting research on high-impact social issues.</h4>
         <p className={styles.p2}>We shape the next generation of innovators and entrepreneurs. We offer experience and practical learning to youth who quest to start their own enterprises or professions.</p>
         <div>
         <button className={styles.button} >More About us </button>
