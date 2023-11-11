@@ -13,6 +13,9 @@ function Navbar() {
     const toggleMenu = () => {
         setIsOpen(!isOpen);
       };
+      const handleSubmit=(e)=>{
+        e.preventDefault();
+      };
   return (
     <div>
            <nav className={styles.navbar}>
@@ -110,23 +113,25 @@ function Navbar() {
           {/* Contact Us */}
           <div className={styles.contacts} id='contact'>
             <div className={styles.contact}>
-              <Image src={contact} alt='contact' className={styles.imgC}/>
+              <Image src={contact} width={400} height={390} alt='contact' className={styles.imgC}/>
             </div>
             <div className={styles.contact}>
               <div className={styles.form}>
-                <form >
+                <form onSubmit={handleSubmit}>
+                  <h5 className={styles.hh}>Contact Us</h5>
                   <div>
                     
                   <input type='text' placeholder='Name' className={styles.name} />
                   </div>
                   <div>
-                  <input type='number' placeholder='Phone number' className={styles.name} />
+                  <input type='text' placeholder='Phone number' className={styles.name} />
                   </div>
                   <div>
                   <input type='email' placeholder='E-mail' className={styles.name} />
                   </div>
                   <div>
-                  <textarea placeholder='Enter your message here'></textarea>
+                  <textarea id='message' placeholder='Enter your message here' >
+                  </textarea>
                   <button className={styles.submit}>Submit</button>
                   </div>
                  </form>
