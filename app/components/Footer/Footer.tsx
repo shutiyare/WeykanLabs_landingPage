@@ -21,10 +21,10 @@ function Footer() {
         <div className={styles.quickLinks}>
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/hero">Home</a></li>
+            <li><a href="#programs">programs</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
         <div className={styles.socialLinks}>
